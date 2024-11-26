@@ -77,8 +77,8 @@ This project implements a **Role-Based Access Control (RBAC)** system to manage 
 1.  **Clone the Repository**:
 
     ```bash
-    git clone <repository-url>
-    cd <repository-name>
+    git clone https://github.com/litikesh/RBAC.git
+    cd RBAC
     ```
 
 2.  **Frontend Setup**:
