@@ -104,9 +104,6 @@ This project implements a **Role-Based Access Control (RBAC)** system to manage 
       PORT=5000
       JWT_SECRET=<your_jwt_secret_key>
       JWT_EXPIRATION=<jwt_token_expiration_time> # e.g., 1h, 7d
-      JWT_COOKIE_EXPIRE=<jwt_cookie_expiration_time> # in days
-      REFRESH_TOKEN_SECRET=<your_refresh_token_secret_key>
-      REFRESH_TOKEN_EXPIRATION=<refresh_token_expiration_time> # e.g., 30d
       CONNECTION_STRING=<your_mongodb_connection_string>
       ```
 
