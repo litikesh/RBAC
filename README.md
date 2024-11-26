@@ -48,10 +48,9 @@ This project implements a **Role-Based Access Control (RBAC)** system to manage 
 
 - **React** with the following packages:
   - Material UI: `@mui/material`, `@mui/icons-material`, `@mui/x-data-grid`
-  - Styling: `@emotion/react`, `@emotion/styled`
-  - State Management: `axios`, `js-cookie`
+  - Styling: `Tailwind CSS`
+  - State Management: `axios`, `React's Context API`
   - Routing: `react-router-dom`
-  - Additional Development Tools: Tailwind CSS, PostCSS, Autoprefixer
 
 ### Backend:
 
@@ -59,7 +58,7 @@ This project implements a **Role-Based Access Control (RBAC)** system to manage 
   - Express.js for server setup
   - Mongoose for MongoDB integration
   - Authentication: `jsonwebtoken`, `bcrypt`
-  - Security: `cors`, `cookie-parser`, `crypto-js`
+  - Security: `cors`, `crypto-js`
   - Configuration Management: `dotenv`
   - Development Utility: `nodemon`
 
