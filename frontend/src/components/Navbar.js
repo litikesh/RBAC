@@ -1,4 +1,4 @@
-import { useNavigate, Link } from "react-router-dom"; // Import Link from react-router-dom
+import { useNavigate, Link } from "react-router-dom";
 import { removeAuthToken, getAuthToken, getUserRole } from "../utils/auth";
 import { useState } from "react";
 
@@ -14,7 +14,7 @@ const Navbar = () => {
   };
 
   const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen); 
+    setIsMenuOpen(!isMenuOpen);
   };
 
   const menuItems = [];

@@ -9,14 +9,12 @@ const SuperAdminDashboard = () => {
     <>
       <Sidebar />
       <div className="p-4 sm:ml-64 bg-gray-50 min-h-screen">
-        {/* Welcome Section */}
         <div className="flex items-center justify-center h-48 mb-6 rounded-lg bg-gradient-to-r from-blue-500 to-indigo-500 shadow-lg">
           <p className="text-3xl font-semibold text-white">
             Welcome, {user?.username}
           </p>
         </div>
 
-        {/* Permissions Section */}
         <div className="p-6 bg-gray-50 shadow-sm rounded-lg">
           <p className="text-lg text-gray-700 mb-4 leading-relaxed">
             As a Super Admin, you have the following capabilities:

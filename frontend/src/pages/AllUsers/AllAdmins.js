@@ -1,6 +1,6 @@
 import React from "react";
 import Sidebar from "../Sidebar/Sidebar";
-import Users from "./Users.js";
+import Users from "./Users";
 
 const AllAdmins = () => {
   return (

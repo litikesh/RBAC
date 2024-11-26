@@ -5,7 +5,7 @@ import { UserContext } from "../context/UserContext";
 const ProtectedRoute = ({ children, allowedRoles }) => {
   const { user, loading } = useContext(UserContext);
 
-  if (loading) return <div>Loading...</div>; // Show a loader while checking authentication
+  if (loading) return <div>Loading...</div>;
 
   if (!user || !user.isAuthenticated) {
     return <Navigate to="/login" />;

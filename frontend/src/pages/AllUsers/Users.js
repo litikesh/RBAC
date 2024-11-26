@@ -186,7 +186,6 @@ const Users = ({ isSuperAdmin, isAdmin, isViewAdmins }) => {
 
       const authToken = `Bearer ${localStorage.getItem("auth_token")}`;
 
-      // Helper function to handle responses
       const handleResponse = (response, successMessage) => {
         if (response.data.success) {
           alert(successMessage);
@@ -200,7 +199,6 @@ const Users = ({ isSuperAdmin, isAdmin, isViewAdmins }) => {
         }
       };
 
-      // If SuperAdmin, update permissions
       if (isSuperAdmin && isViewAdmins) {
         const response = await axios.post(
           "http://localhost:5000/api/user/superadmin/assign-permission",
@@ -210,7 +208,6 @@ const Users = ({ isSuperAdmin, isAdmin, isViewAdmins }) => {
         handleResponse(response, "Permissions updated successfully.");
       }
 
-      // Block or unblock the user
       const response = await axios.post(
         "http://localhost:5000/api/user/all-users/blockOrUnblockUser",
         { userId, status },
@@ -239,7 +236,6 @@ const Users = ({ isSuperAdmin, isAdmin, isViewAdmins }) => {
         });
 
         const users = res.data.users || [];
-        // Filter users based on the search query
         const filteredSuggestions = users
           .filter((user) =>
             user.username.toLowerCase().includes(value.toLowerCase())
@@ -415,7 +411,7 @@ const Users = ({ isSuperAdmin, isAdmin, isViewAdmins }) => {
           </button>
         ),
       },
-  ].filter(Boolean); // Filter out false values from columns array
+  ].filter(Boolean);
 
   if (loading)
     return (

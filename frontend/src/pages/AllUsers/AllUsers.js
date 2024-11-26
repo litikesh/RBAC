@@ -8,7 +8,6 @@ const AllUsers = () => {
   const [isSuperAdmin, setIsSuperAdmin] = useState(false);
   const [isAdmin, setIsAdmin] = useState(false);
 
-  // Effect to update state based on the user's role
   useEffect(() => {
     if (user) {
       if (user.role === "superadmin") {
@@ -22,7 +21,7 @@ const AllUsers = () => {
         setIsAdmin(false);
       }
     }
-  }, [user]); // Depend on user
+  }, [user]); 
   return (
     <div>
       <Sidebar />

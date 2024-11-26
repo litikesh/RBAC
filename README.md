@@ -108,8 +108,7 @@ This project implements a **Role-Based Access Control (RBAC)** system to manage 
       REFRESH_TOKEN_SECRET=<your_refresh_token_secret_key>
       REFRESH_TOKEN_EXPIRATION=<refresh_token_expiration_time> # e.g., 30d
       CONNECTION_STRING=<your_mongodb_connection_string>
-
-           ```
+      ```
 
 ---
 
